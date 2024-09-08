@@ -4,6 +4,8 @@ services:
   app:
     container_name: srcbot
     build: .
+    ports:
+      - "8080:8080"
     command: bash bash.sh
     environment:
       API_ID: # Your API HASH from my.telegram.org
